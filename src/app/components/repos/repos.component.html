@@ -1,0 +1,8 @@
+<div  *ngFor="let repo of repos"  class="bg-success p-2 text-dark bg-opacity-25 list-group">
+
+    <!-- repo.html_url makes the obtained links to be clickable -->
+    <a [href]="repo.html_url" target="_blank"
+    class="list-group-item list-group-item-action">
+        {{repo.name}}
+    </a>
+</div>
